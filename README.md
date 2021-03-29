@@ -10,5 +10,14 @@ A brief description of what this repository is for and what it contains
 * Biologist: Elysha Sameth (@esameth)
 
 # Repository Contents
+## Data Curator
+### STAR.qsub
+* Dependencies: STAR aligner
+* Execution: `qsub STAR.qsub`
+* Outputs: STAR outputs with `.bam` file and corresponding alignment statistics
 
-Provide a brief description of each script/code file in this repo, what it does, and how to execute it
+### multiqc.qsub
+* Dependencies: multiqx
+* Execution: `qsub multiqc.qsub`
+* Inputs: STAR outptus
+* Outputs: multiqc outputs
