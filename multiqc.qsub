@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+
+source /etc/bashrc
+
+module load python2
+module load multiqc
+
+multiqc /projectnb/bf528/users/van-gogh/project_3/Data/STAR_output
