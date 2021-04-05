@@ -28,3 +28,9 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Execution: `qsub multiqc.qsub`
 * Inputs: STAR outptus
 * Outputs: multiqc outputs
+
+## Biologist
+### GSE_filter.R
+* Dependencies: R
+* Inputs: Three files (for each MOA) from `limma` and `DESeq2`
+* Outputs: List of probe IDs/gene names that are differentialy expressed using `| log2FC | > log2(1.5)` and `unadjusted p < 0.05` for GSEA
