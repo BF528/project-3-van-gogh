@@ -41,7 +41,7 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Inputs: Two files - group_3_toxo_info.csv and liver-normalization-rma.txt
 * Outputs: 3 csv files for each chemical sample 
 
-### analyst_limma.R	
+### concordance.R	
 * Dependencies: R
 * Inputs: Three files (for each MOA) from `limma` and `DESeq2`
 * Outputs: Histograms and Barplots
