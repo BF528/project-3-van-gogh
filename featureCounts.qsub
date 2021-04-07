@@ -1,0 +1,17 @@
+#!/bin/bash
+# Andrew Gjelsteen BF528 Spr2021
+# van-gogh - project 3
+
+#$ -P bf528
+#$ -cwd
+#$ -pe omp 16
+
+source /etc/bashrc
+
+module load subread
+
+GTF= rn4_refGene_20180308.gtf #path to gtf annotation
+OUT= SRR1178029__rn4_counts # output files
+# OUT is adjusted each time for each of the nine samples.
+# This is a single example.
+featureCounts -T 16 -a $GTF -o $OUT # input files
