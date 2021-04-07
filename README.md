@@ -34,3 +34,14 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Dependencies: R
 * Inputs: Three files (for each MOA) from `limma` and `DESeq2`
 * Outputs: List of probe IDs/gene names that are differentialy expressed using `| log2FC | > log2(1.5)` and `unadjusted p < 0.05` for GSEA
+
+## Analyst
+### analyst_limma.R	
+* Dependencies: R
+* Inputs: Two files - group_3_toxo_info.csv and liver-normalization-rma.txt
+* Outputs: 3 csv files for each chemical sample 
+
+### analyst_limma.R	
+* Dependencies: R
+* Inputs: Three files (for each MOA) from `limma` and `DESeq2`
+* Outputs: Histograms and Barplots
