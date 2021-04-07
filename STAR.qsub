@@ -1,0 +1,15 @@
+#$ -P bf528
+#$ -cwd
+#$ -pe omp 16
+#
+source /etc/bashrc
+
+module load gcc
+module load star/2.6.0c
+
+GENOMEDIR=/projectnb2/bf528/project_3/reference/rn4_STAR
+
+STAR --genomeDir $GENOMEDIR --runThreadN 16 --readFilesCommand zcat \
+	--outSAMtype BAM SortedByCoordinate \
+	--readFilesIn /projectnb/bf528/users/van-gogh/project_3/Data/samples_toxgroup3/SRR1177981_1.fastq.gz /projectnb/bf528/users/van-gogh/project_3/Data/samples_toxgroup3/SRR1177981_2.fastq.gz \
+	--outFileNamePrefix /projectnb/bf528/users/van-gogh/project_3/Data/STAR_output/SRR1177981
