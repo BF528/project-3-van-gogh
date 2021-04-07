@@ -29,6 +29,18 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Inputs: STAR outptus
 * Outputs: multiqc outputs
 
+## Programmer
+### featureCounts.qsub
+* Dependencies: multiqc, python 2.7
+* Execution: 'qsub featureCounts.qsub'
+* Inputs: 9 bam files
+* Outputs: 9 count files, featureCounts .html with plots and statistics
+
+### ProgrammerScript.R
+* Dependencies: R, ggplot2, DESeq2
+* Inputs: 9 count files, corresponding to each bam input
+* Outputs: 3 csv files for each chemical sample, histogram plot for counts, scatterplot for counts
+
 ## Analyst
 ### analyst_limma.R	
 * Dependencies: R
