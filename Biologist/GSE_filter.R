@@ -28,9 +28,9 @@ lapply(names(files), function(x) MA_write_file(files[[x]], x))
 
 
 # Read in the RNA-seq (DESeq2) files
-RNA_AHR <- read.csv('/projectnb/bf528/users/van-gogh/project_3/Programmer/DESeq_leflunomide.csv')
-RNA_DNA <- read.csv('/projectnb/bf528/users/van-gogh/project_3/Programmer/DESeq_ifosfamide.csv')
-RNA_PXR <- read.csv('/projectnb/bf528/users/van-gogh/project_3/Programmer/DESeq_fluconazole.csv')
+RNA_AHR <- read.csv('/projectnb2/bf528/users/van-gogh/project_3/Programmer/deseqResults/deseq_results_AhR.csv')
+RNA_DNA <- read.csv('/projectnb2/bf528/users/van-gogh/project_3/Programmer/deseqResults/deseq_results_DNA_Damage.csv')
+RNA_PXR <- read.csv('/projectnb2/bf528/users/van-gogh/project_3/Programmer/deseqResults/deseq_results_PXR.csv')
 
 files <- list(RNA_AHR=RNA_AHR, RNA_DNA=RNA_DNA, RNA_PXR=RNA_PXR)
 names <- names(files)
