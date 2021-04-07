@@ -29,12 +29,6 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Inputs: STAR outptus
 * Outputs: multiqc outputs
 
-## Biologist
-### GSE_filter.R
-* Dependencies: R
-* Inputs: Three files (for each MOA) from `limma` and `DESeq2`
-* Outputs: List of probe IDs/gene names that are differentialy expressed using `| log2FC | > log2(1.5)` and `unadjusted p < 0.05` for GSEA
-
 ## Analyst
 ### analyst_limma.R	
 * Dependencies: R
@@ -45,3 +39,14 @@ Wang, Charles, Binsheng Gong, Pierre R. Bushel, Jean Thierry-Mieg, Danielle Thie
 * Dependencies: R
 * Inputs: Three files (for each MOA) from `limma` and `DESeq2`
 * Outputs: Histograms and Barplots
+
+## Biologist
+### GSE_filter.R
+* Dependencies: R
+* Inputs: Three files (for each MOA) from `limma` and `DESeq2`
+* Outputs: List of probe IDs/gene names that are differentialy expressed using `| log2FC | > log2(1.5)` and `unadjusted p < 0.05` for GSEA
+
+### heatmap.R
+* Dependencies: R, BiocManager
+* Inputs: Three files (for each MOA) of the normalized counts from `DESeq2`
+* Outputs: Heatmap-based hierarchical clustering of the MOAs along with a PCA of the samples
